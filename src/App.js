@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
-      <h2>Las ofertas de la semana</h2>
+      <h2>Las ofertas de la semana!</h2>
     </div>
   );
 }
