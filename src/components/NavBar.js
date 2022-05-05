@@ -3,8 +3,8 @@ import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-//import * as React from "react";
 import Button from "@mui/material/Button";
+import CartWidget from "./CartWidget";
 
 function NavBar() {
   return (
@@ -25,6 +25,7 @@ function NavBar() {
               Limpieza
             </Button>
           </Box>
+          <CartWidget />
         </Toolbar>
       </Container>
     </AppBar>
