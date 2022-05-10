@@ -1,5 +1,4 @@
 import IconButton from "@mui/material/IconButton";
-//import AccountCircle from "@mui/icons-material/AccountCircle";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 function CartWidget() {

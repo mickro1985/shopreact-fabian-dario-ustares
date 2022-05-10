@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
+import ItemCount from "./ItemCount";
 
 function ItemListContainer({ greeting }) {
   return (
@@ -7,6 +8,7 @@ function ItemListContainer({ greeting }) {
       sx={{
         display: "flex",
         flexWrap: "wrap",
+        justifyContent: "center",
         "& > :not(style)": {
           m: 1,
           width: 800,
@@ -14,7 +16,10 @@ function ItemListContainer({ greeting }) {
         },
       }}
     >
-      <Paper>Hola {greeting} bienvenido a nuestra tienda</Paper>
+      <Paper>
+        Hola {greeting} bienvenido a nuestra tienda
+        <ItemCount stock="10" />
+      </Paper>
     </Box>
   );
 }
