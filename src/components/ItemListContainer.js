@@ -1,8 +1,28 @@
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-import ItemCount from "./ItemCount";
+import { useEffect, useState } from "react";
+import DataItems from "../data/data.json";
+import ItemList from "./ItemList";
 
 function ItemListContainer({ greeting }) {
+  const [items, setItems] = useState([]);
+
+  const getItems = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(DataItems);
+    }, 2000);
+  });
+
+  useEffect(() => {
+    getItems
+      .then((res) => {
+        setItems(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <Box
       sx={{
@@ -12,13 +32,12 @@ function ItemListContainer({ greeting }) {
         "& > :not(style)": {
           m: 1,
           width: 800,
-          height: 600,
         },
       }}
     >
       <Paper>
         Hola {greeting} bienvenido a nuestra tienda
-        <ItemCount stock="10" />
+        <ItemList arrayDeItems={items} />
       </Paper>
     </Box>
   );

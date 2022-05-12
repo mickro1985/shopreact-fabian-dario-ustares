@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Notebook Lenovo 14 S145",
+    "description": "PROCESADOR: Marca AMD. Modelo 3020E. Núcleos 2. Frecuencia 2.6GHz.",
+    "price": "$59.902,05",
+    "pictureUrl": "images/notebook.webp"
+  },
+  {
+    "id": 2,
+    "title": "Monitor HP 18.5 - VGA / HDMI",
+    "description": "Tipo de Panel: TN. Tipo de retroiluminación: LED.",
+    "price": "$25.550",
+    "pictureUrl": "images/monitor.webp"
+  },
+  {
+    "id": 3,
+    "title": "Impresora Pantum P2500W",
+    "description": "Impresora de elegante diseño y tamaño compacto.",
+    "price": "$30.901,04",
+    "pictureUrl": "images/impresora.webp"
+  },
+  {
+    "id": 4,
+    "title": "Teclado Logitech K480",
+    "description": "Un teclado de escritorio inalámbrico para tu computadora, tablet y smartphone",
+    "price": "$6.630",
+    "pictureUrl": "images/teclado.webp"
+  }
+]
