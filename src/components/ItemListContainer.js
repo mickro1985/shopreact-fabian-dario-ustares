@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import { useEffect, useState } from "react";
-import DataItems from "../data/data.json";
+import dataItems from "../data/data.json";
 import ItemList from "./ItemList";
 
 function ItemListContainer({ greeting }) {
@@ -9,7 +9,7 @@ function ItemListContainer({ greeting }) {
 
   const getItems = new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(DataItems);
+      resolve(dataItems);
     }, 2000);
   });
 
