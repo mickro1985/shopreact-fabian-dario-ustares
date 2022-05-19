@@ -2,7 +2,7 @@
 
 Tienda de insumos informáticos desarrollada en REACT JS siguiendo la filosofía SPA (Single Page Application).
 
-![ShopReact](public/2022-05-18_23h11_12.gif)
+![ShopReact](public/react-shop.gif)
 
 ## Dependencias Descargadas
 
