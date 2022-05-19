@@ -18,18 +18,18 @@ const ItemDetail = ({ item }) => {
       sx={{
         p: 2,
         margin: "auto",
-        maxWidth: 600,
+        maxWidth: 800,
       }}
     >
-      <Grid container spacing={2}>
+      <Grid container spacing={12}>
         <Grid item>
-          <ButtonBase sx={{ width: 256, height: 256 }}>
-            <Img alt="complex" src={item.pictureUrl} />
+          <ButtonBase sx={{ width: 350, height: 350 }}>
+            <Img alt={item.title} src={item.pictureUrl} />
           </ButtonBase>
         </Grid>
-        <Grid item xs={12} sm container>
-          <Grid item xs container direction="column" spacing={2}>
-            <Grid item xs>
+        <Grid item>
+          <Grid item>
+            <Grid item>
               <Typography gutterBottom variant="h5" component="div">
                 {item.title}
               </Typography>

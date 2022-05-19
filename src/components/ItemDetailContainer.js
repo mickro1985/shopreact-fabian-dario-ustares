@@ -1,21 +1,25 @@
 import { useState, useEffect } from "react";
 import dataItems from "../data/data.json";
 import ItemDetail from "./ItemDetail";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-  const [items, setItems] = useState([]);
+  const [item, setItem] = useState([]);
 
-  const getItem = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(dataItems[0]);
-    }, 2000);
-  });
+  const { itemId } = useParams();
 
   useEffect(() => {
-    getItem.then((res) => setItems(res)).catch((e) => console.log(e));
-  }, []);
+    const getItem = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const filterItem = dataItems.filter((i) => i.id === Number(itemId));
+        resolve(filterItem[0]);
+      }, 2000);
+    });
 
-  return <ItemDetail item={items} />;
+    getItem.then((res) => setItem(res)).catch((e) => console.log(e));
+  }, [itemId]);
+
+  return <ItemDetail item={item} />;
 };
 
 export default ItemDetailContainer;

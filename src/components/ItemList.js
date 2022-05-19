@@ -4,9 +4,9 @@ import Grid from "@mui/material/Grid";
 const ItemList = ({ arrayDeItems }) => {
   return (
     <Grid container spacing={2}>
-      {arrayDeItems.map((value) => (
-        <Grid item xs={4}>
-          <Item key={value.id} item={value} />
+      {arrayDeItems.map((item) => (
+        <Grid item xs={4} key={item.id}>
+          <Item item={item} />
         </Grid>
       ))}
     </Grid>

@@ -1,29 +1,44 @@
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+//import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CartWidget from "./CartWidget";
+import { Link as RouterLink } from "react-router-dom";
+import Link from "@mui/material/Link";
 
 function NavBar() {
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography variant="h5" sx={{ mr: 2 }}>
+          <Link
+            component={RouterLink}
+            underline="none"
+            color="inherit"
+            variant="h5"
+            sx={{ mr: 2 }}
+            to="/"
+          >
             REACT-SHOP
-          </Typography>
+          </Link>
           <Box sx={{ flexGrow: 1, display: { md: "flex" } }}>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
-              Bebidas
-            </Button>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
-              Lacteos
-            </Button>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
-              Limpieza
-            </Button>
+            <Link component={RouterLink} to="/category/1">
+              <Button sx={{ my: 2, color: "white", display: "block" }}>
+                Notebooks
+              </Button>
+            </Link>
+            <Link component={RouterLink} to="/category/2">
+              <Button sx={{ my: 2, color: "white", display: "block" }}>
+                Monitores
+              </Button>
+            </Link>
+            <Link component={RouterLink} to="/category/3">
+              <Button sx={{ my: 2, color: "white", display: "block" }}>
+                Impresoras
+              </Button>
+            </Link>
           </Box>
           <CartWidget />
         </Toolbar>

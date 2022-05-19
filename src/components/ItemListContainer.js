@@ -3,17 +3,27 @@ import Paper from "@mui/material/Paper";
 import { useEffect, useState } from "react";
 import dataItems from "../data/data.json";
 import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
 
 function ItemListContainer({ greeting }) {
   const [items, setItems] = useState([]);
 
-  const getItems = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(dataItems);
-    }, 2000);
-  });
+  const { categoryId } = useParams();
 
   useEffect(() => {
+    const getItems = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (categoryId === undefined) {
+          resolve(dataItems);
+        } else {
+          const filterItems = dataItems.filter(
+            (i) => i.categoryId === Number(categoryId)
+          );
+          resolve(filterItems);
+        }
+      }, 2000);
+    });
+
     getItems
       .then((res) => {
         setItems(res);
@@ -21,7 +31,7 @@ function ItemListContainer({ greeting }) {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [categoryId]);
 
   return (
     <Box
@@ -36,7 +46,7 @@ function ItemListContainer({ greeting }) {
       }}
     >
       <Paper>
-        Hola {greeting} bienvenido a nuestra tienda
+        {/* <h1>Hola {greeting} bienvenido a nuestra tienda</h1> */}
         <ItemList arrayDeItems={items} />
       </Paper>
     </Box>

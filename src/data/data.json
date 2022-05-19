@@ -4,27 +4,47 @@
     "title": "Notebook Lenovo 14 S145",
     "description": "PROCESADOR: Marca AMD. Modelo 3020E. Núcleos 2. Frecuencia 2.6GHz.",
     "price": "$59.902,05",
-    "pictureUrl": "images/notebook.webp"
+    "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904250/notebook_xcax4c.webp",
+    "categoryId": 1
   },
   {
     "id": 2,
     "title": "Monitor HP 18.5 - VGA / HDMI",
     "description": "Tipo de Panel: TN. Tipo de retroiluminación: LED.",
     "price": "$25.550",
-    "pictureUrl": "images/monitor.webp"
+    "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904248/monitor_afw7g2.webp",
+    "categoryId": 2
   },
   {
     "id": 3,
     "title": "Impresora Pantum P2500W",
     "description": "Impresora de elegante diseño y tamaño compacto.",
     "price": "$30.901,04",
-    "pictureUrl": "images/impresora.webp"
+    "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904248/impresora_ac3uyo.webp",
+    "categoryId": 3
   },
   {
     "id": 4,
-    "title": "Teclado Logitech K480",
-    "description": "Un teclado de escritorio inalámbrico para tu computadora, tablet y smartphone",
-    "price": "$6.630",
-    "pictureUrl": "images/teclado.webp"
+    "title": "Notebook HP 17 NM43",
+    "description": "Intel Core i3-1115G4 de undécima generación. 16 GB de RAM DDR4",
+    "price": "$136.390",
+    "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904249/notebook2_jo2cdo.jpg",
+    "categoryId": 1
+  },
+  {
+    "id": 5,
+    "title": "Monitor Acer K202HQL",
+    "description": "Frecuencia de actualización de 60 Hz. Tiempo de respuesta de 5 ms.",
+    "price": "$24.510",
+    "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904249/monitor2_xfkrrq.jpg",
+    "categoryId": 2
+  },
+  {
+    "id": 6,
+    "title": "Impresora Epson Expression",
+    "description": "Home XP-4100 con escáner y copiadora.",
+    "price": "$21.910",
+    "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904247/impresora3_vmb9qi.jpg",
+    "categoryId": 3
   }
 ]
