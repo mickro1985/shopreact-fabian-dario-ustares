@@ -5,7 +5,7 @@
     "description": "PROCESADOR: Marca AMD. Modelo 3020E. Núcleos 2. Frecuencia 2.6GHz.",
     "price": "$59.902,05",
     "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904250/notebook_xcax4c.webp",
-    "categoryId": 1
+    "categoryId": "notebooks"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "description": "Tipo de Panel: TN. Tipo de retroiluminación: LED.",
     "price": "$25.550",
     "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904248/monitor_afw7g2.webp",
-    "categoryId": 2
+    "categoryId": "monitores"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "description": "Impresora de elegante diseño y tamaño compacto.",
     "price": "$30.901,04",
     "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904248/impresora_ac3uyo.webp",
-    "categoryId": 3
+    "categoryId": "impresoras"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "description": "Intel Core i3-1115G4 de undécima generación. 16 GB de RAM DDR4",
     "price": "$136.390",
     "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904249/notebook2_jo2cdo.jpg",
-    "categoryId": 1
+    "categoryId": "notebooks"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "description": "Frecuencia de actualización de 60 Hz. Tiempo de respuesta de 5 ms.",
     "price": "$24.510",
     "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904249/monitor2_xfkrrq.jpg",
-    "categoryId": 2
+    "categoryId": "monitores"
   },
   {
     "id": 6,
@@ -45,6 +45,6 @@
     "description": "Home XP-4100 con escáner y copiadora.",
     "price": "$21.910",
     "pictureUrl": "https://res.cloudinary.com/dqmyrbsj4/image/upload/v1652904247/impresora3_vmb9qi.jpg",
-    "categoryId": 3
+    "categoryId": "impresoras"
   }
 ]

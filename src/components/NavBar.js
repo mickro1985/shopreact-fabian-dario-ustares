@@ -24,17 +24,17 @@ function NavBar() {
             REACT-SHOP
           </Link>
           <Box sx={{ flexGrow: 1, display: { md: "flex" } }}>
-            <Link component={RouterLink} to="/category/1">
+            <Link component={RouterLink} to="/category/notebooks">
               <Button sx={{ my: 2, color: "white", display: "block" }}>
                 Notebooks
               </Button>
             </Link>
-            <Link component={RouterLink} to="/category/2">
+            <Link component={RouterLink} to="/category/monitores">
               <Button sx={{ my: 2, color: "white", display: "block" }}>
                 Monitores
               </Button>
             </Link>
-            <Link component={RouterLink} to="/category/3">
+            <Link component={RouterLink} to="/category/impresoras">
               <Button sx={{ my: 2, color: "white", display: "block" }}>
                 Impresoras
               </Button>

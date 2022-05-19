@@ -17,7 +17,7 @@ function ItemListContainer({ greeting }) {
           resolve(dataItems);
         } else {
           const filterItems = dataItems.filter(
-            (i) => i.categoryId === Number(categoryId)
+            (i) => i.categoryId === categoryId
           );
           resolve(filterItems);
         }

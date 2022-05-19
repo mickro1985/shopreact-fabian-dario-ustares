@@ -1,8 +1,8 @@
 # Ecommerce REACT-SHOP
 
-Tienda de insumos informáticos.
+Tienda de insumos informáticos desarrollada en REACT JS siguiendo la filosofía SPA (Single Page Application).
 
-![Endavant](public/2022-05-18_23h11_12.gif)
+![ShopReact](public/2022-05-18_23h11_12.gif)
 
 ## Dependencias Descargadas
 
@@ -23,7 +23,7 @@ Usado para montar y hacer un render de los componentes solo cuando se los tiene 
 useParams (React-Router-Dom).\
 Con useParams se detecta el parametro que le indicamos por la URL.
 
-## Pasos para ver el proyecto en local
+## Instalacion
 
 1. Desde la opcion Code copiamos el link HTTPS
 
@@ -44,3 +44,7 @@ npm i
 ```
 npm start
 ```
+
+## Autor
+
+Fabian Dario Ustares - 2022 - CoderHouse
