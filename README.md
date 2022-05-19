@@ -2,7 +2,7 @@
 
 Tienda de insumos informáticos.
 
-![Endavant](public/img/edv-gif-react.gif)
+![Endavant](public/2022-05-18_23h11_12.gif)
 
 ## Dependencias Descargadas
 
