@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 
-export default function ItemCount({ stock }) {
-  const [count, setCount] = useState(1);
+export default function ItemCount({ stock, inicial, onAdd }) {
+  const [count, setCount] = useState(inicial);
 
   function add() {
     count < stock
@@ -17,9 +17,9 @@ export default function ItemCount({ stock }) {
     }
   }
 
-  function onAdd() {
-    alert("Se agregaron " + count + " articulos a tu carrito");
-  }
+  // function onAdd() {
+  //   alert("Se agregaron " + count + " articulos a tu carrito");
+  // }
 
   return (
     <div>
@@ -34,7 +34,7 @@ export default function ItemCount({ stock }) {
           </Button>
         </Stack>
       </div>
-      <Button variant="contained" onClick={onAdd}>
+      <Button variant="contained" onClick={() => onAdd(count)}>
         Agregar al Carrito
       </Button>
     </div>
