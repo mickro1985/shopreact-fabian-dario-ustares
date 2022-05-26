@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
@@ -7,19 +7,23 @@ import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import ItemCount from "./ItemCount";
 import { Link as RouterLink } from "react-router-dom";
+import CartContext from "./CartContext";
 
 const ItemDetail = ({ item }) => {
-  const [Cart, setCart] = useState(0);
-  function carrito(itemsCart) {
-    setCart(itemsCart);
-  }
-
   const Img = styled("img")({
     margin: "auto",
     display: "block",
     maxWidth: "100%",
     maxHeight: "100%",
   });
+
+  const Cart = useContext(CartContext);
+
+  //console.log(Cart.ProductosCarro);
+
+  function addToCart(productosCarro) {
+    Cart.addItem({ cantidad: productosCarro, ...item });
+  }
 
   return (
     <Paper
@@ -54,15 +58,10 @@ const ItemDetail = ({ item }) => {
               </Typography>
             </Grid>
             <Grid>
-              {Cart ? (
-                <Button>
-                  <RouterLink to="/Cart" style={{ color: "#00264D" }}>
-                    Finalizar la compra de ({Cart} productos)
-                  </RouterLink>
-                </Button>
-              ) : (
-                <ItemCount inicial={1} stock={10} onAdd={carrito}></ItemCount>
-              )}
+              <ItemCount inicial={1} stock={10} onAdd={addToCart}></ItemCount>
+              <Button onClick={() => console.log(Cart.ProductosCarro)}>
+                <RouterLink to="/Cart">Finalizar la compra</RouterLink>
+              </Button>
             </Grid>
           </Grid>
         </Grid>
